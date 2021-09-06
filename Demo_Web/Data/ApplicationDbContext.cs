@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Demo_Web.Models;
 
 namespace Demo_Web.Data
 {
@@ -12,5 +13,6 @@ namespace Demo_Web.Data
             : base(options)
         {
         }
+        public DbSet<Demo_Web.Models.recipe> recipe { get; set; }
     }
 }
